@@ -38,8 +38,8 @@ class BankAccount:
         print("The balance is:", cls.balance, "dollars")
         print("The interest is:", cls.intRate, "percent")
 
-bankAccount1 = BankAccount(2, 100)
-bankAccount2 = BankAccount(3, 400)
+bankAccount1 = BankAccount(1, 2, 100)
+bankAccount2 = BankAccount(2, 2, 400)
 
 bankAccount1.deposit(100).deposit(150).deposit(50).withdraw(200).yield_interest().display_account_info()
 print()

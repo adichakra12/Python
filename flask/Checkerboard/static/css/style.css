@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+}
+
+div{
+    width: 800px;
+    position: relative;
+    left: 650px;
+}
+
+.color1 {
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+
+}
+
+.color2 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}

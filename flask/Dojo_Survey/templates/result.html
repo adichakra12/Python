@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Result</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 100px;
+        }
+        th{
+            width: 100px;
+            height: 50px;
+        }
+        input{
+            position: relative;
+            top: 110px;
+            left: -110px;
+        }
+    </style>
+</head>
+<body>
+    <form action ="/" method = "post">
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>{{name}}</td>
+            </tr>
+            <tr>
+                <th>Location:</th>
+                <td>{{ location }}</td>
+            </tr>
+            <tr>
+                <th>Favorite Language:</th>
+                <td>{{ language }}</td>
+            </tr>
+            <tr>
+                <th>Comment:</th>
+                <td>{{ comment }}</td>
+            </tr>
+        </table>
+        <input type="Submit" value="Go Back">
+    </form>
+    
+</body>
+</html>

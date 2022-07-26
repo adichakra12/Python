@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./flask_mysql/crud/users_crud_modularized/config"
+    ]
+}

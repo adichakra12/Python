@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/newDojo" method="post">
+            <h2>New Dojo</h2>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+            </div>
+            <input type="submit" value="Add Dojo">
+        </form>
+        <div>
+            <h2 class="text-primary">All Dojos</h2>
+            {% for dojo in dojos %}
+            <p> 
+                <a href="/dojo/{{dojo.id}}">{{dojo.name}}</a>
+            </p>
+            {% endfor %}
+        </div>
+    </div>
+    <a href="/ninjas">Add Ninja</a>
+</body>
+</html>
